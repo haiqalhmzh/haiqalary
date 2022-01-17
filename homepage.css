@@ -1,0 +1,39 @@
+body, html {
+  height: 100%;
+}
+.hero-image {
+    background-image: url("gamba/background.jfif");
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text {
+    text-align: justify;
+    position: absolute;
+    animation: blinker 1.0s linear infinite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+    @keyframes blinker {
+      50% {
+        opacity: 0;
+      }
+    
+  }
+    a:link, a:visited {
+      background-color: #a08a8900;
+      color: white;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    a:hover, a:active {
+      background-color: rgba(78, 78, 78, 0.137);
+    }
